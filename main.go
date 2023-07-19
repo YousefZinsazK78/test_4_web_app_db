@@ -10,6 +10,13 @@ import (
 
 var db *sql.DB
 
+type Album struct {
+	ID     int64
+	Title  string
+	Artist string
+	Price  float32
+}
+
 // main func for running main function...
 func main() {
 	fmt.Println("hello, world!")
