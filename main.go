@@ -50,6 +50,11 @@ func main() {
 	}
 	fmt.Printf("Albums found: %v\n", albums)
 
+	alb, err := albumByID(2)
+	if err != nil {
+		log.Fatal(err)
+	}
+	fmt.Printf("Album found: %v\n", alb)
 }
 
 // albumByID queries for the album with the specified ID.
